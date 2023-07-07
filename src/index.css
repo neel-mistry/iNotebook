@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+i{
+  cursor: pointer;
+}
+
+.card-text{
+  font-size: 1rem;
+}
+
+.edit-icon{
+  visibility: hidden;
+}
+
+.card :hover{
+  .edit-icon{
+    visibility: visible;
+  }
+}
+
+.notes-left{
+  overflow: hidden;
+}
