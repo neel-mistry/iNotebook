@@ -24,7 +24,7 @@ router.post('/addnote', fetchuser, [
     // If there is error, return bad req and errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: result.array() });
+        return res.status(400).json({ errors: errors.array() });
     }
     try {
         const note = new Note({

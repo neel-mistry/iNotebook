@@ -22,6 +22,7 @@ i{
 
 .edit-icon{
   visibility: hidden;
+  margin-bottom: var(--bs-card-title-spacer-y);
 }
 
 .card :hover{

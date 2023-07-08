@@ -20,12 +20,12 @@ const Navbar = () => {
                                 <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link>
                             </li>
                         </ul>
-                        <form className="d-flex mx-2" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <Link className="btn btn-primary" to="/login">Login</Link>
+                            <Link className="btn btn-primary" to="/signup">Signup</Link>
+                        </div>
                         <div className="form-check form-switch mx-2">
-                            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+                            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
                         </div>
                     </div>
